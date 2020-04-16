@@ -14,6 +14,7 @@
     #004e92,
     #000428
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .mdl-layout__header .mdl-layout__drawer-button {
   background-color: transparent !important;
@@ -25,7 +26,6 @@
   background-size: cover;
   min-height: 100vh;
   text-align: center;
-  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -92,7 +92,7 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%231ebacc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23903f3f' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%2304a5d5' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%238b0d25' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%232186c0' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23bc2156' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%231c61a0' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac1461' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23674fb5' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23450232' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23bd3cbd' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23580e58' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
-  min-height: 87vh;
+  min-height: 100vh;
   height: 100%;
   width: 100%;
 }
@@ -103,24 +103,47 @@
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
   margin: auto;
   justify-content: center;
-  padding-top: 8em;
+  padding-top: 4em;
+  min-height: 100vh;
 }
 
 .contact-grid{
   text-align: center;
   justify-content: center;
-  width: 80%;
-  height: 550px;
+  width: 85%;
+  height: auto;
   background-color: white;
   color: black;
   border: 2px solid black;
-  opacity: .7;
+  opacity: .9;
   margin-bottom: 20px;
+}
+
+.contact-grid h3{
+  font-family: 'Lemonada', cursive;
+
+}
+
+.contact-grid p{
+  font-family: 'Podkova', serif;
+  font-weight: 700;
+}
+
+.contact-grid hr{
+  border-top: dotted black;
+  margin: auto;
+  width: 50%;
+}
+
+.contact-list i{
+  font-size: 35px;
+  padding-right: 2rem;
+}
+
+.resume-right-col{
+  background: #27212f;
+  color: white;
+  padding: 2em;
 }
